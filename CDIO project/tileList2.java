@@ -26,4 +26,10 @@ class TileList {
 
 }
 
-  //Forsæt med resten af tiles med samme format som ovenstående
+public String getDescription() {
+  if (value >= 0 ) {
+  return tileNumber + " " + message + ": gain " + value + " gold";  
+  } else {
+    return tileNumber + " " + message + ": lose " + value + " gold";
+  }
+}
