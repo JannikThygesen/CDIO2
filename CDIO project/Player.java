@@ -1,16 +1,23 @@
 import java.util.Scanner;
-
-public class Player {
+//Class to store playername and construction of new players
+class Player {
   String name;
-  int points;
-
-  public player(String name, int points){
+  int gold;
+  
+  //Constructor for objects of Player class
+  public player(String name, int gold){
       this.name = name;
-      this.points = points;
+      this.gold = 1000;
   }
+}
+//Class to store players gold values
+class Account {
+  String name;
+  int gold;
 
-  void updatePoints(int change) {
-    this.points += change;
+  //Updates points and makes sure it cant get below 0
+  void updatePoints(int Value) {
+    this.gold = Math.max(0, this.gold += Value);
   }
   
 }
