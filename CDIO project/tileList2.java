@@ -11,7 +11,6 @@ class Tile {
   }
 }
 
-class TileList {
   Tile Tower = new Tile(2, "You climb up the tower and find a chest with 250 goldpieces", 250);
   Tile Crater = new Tile(3, "You fall down a crater and drop 100 goldpieces", -100);
   Tile PalaceGates = new Tile(4, "You reached the palace and sell your shoes for 100 goldpieces", 100);
@@ -24,7 +23,7 @@ class TileList {
   Tile Pit = new Tile(11, "You spend 50 goldpieces eating and drinking at the tavern The Pit", -50);
   Tile Goldmine = new Tile(12, "You inherit a goldmine from a distant relative and collect 650 goldpieces from it", 650);
 
-}
+
 
 public String getDescription() {
   if (value >= 0 ) {
