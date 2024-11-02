@@ -99,9 +99,9 @@ class Tile {
   public String getDescription(int rollTotal, Tile[] tiles) {
   Tile tile = tiles[rollTotal-2]; // subtract 2 to account for 0-indexed array
     if (tile.value >= 0 ) {
-      return tile.tileNumber + " " + tile.message + ": gain " + tile.value + " gold";  
+      return "Tile: " + tile.tileNumber + " " + tile.message + ": gain " + tile.value + " gold";  
     } else {
-      return tile.tileNumber + " " + tile.message + ": lose " + Math.abs(tile.value) + " gold";
+      return "Tile: " + tile.tileNumber + " " + tile.message + ": lose " + Math.abs(tile.value) + " gold";
     }
   }
 }
@@ -139,7 +139,6 @@ public class TileGame{
       game.startGame();
     }
 }
-
 
 
 

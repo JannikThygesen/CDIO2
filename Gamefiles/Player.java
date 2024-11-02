@@ -58,4 +58,3 @@ class Account {
     this.gold = Math.max(0, this.gold += value);
   }
 }
-
